@@ -69,6 +69,9 @@ object Main extends App with SimpleRoutingApp with UserAuthenticator with Securi
     pathPrefix("api") {
       securityRoute
     } ~
+    pathPrefix("web") {
+      getFromResourceDirectory("web")
+    } ~
     authenticate(BasicAuth(authenticator _, realm = "secure site")) { username =>
       path("secure") {
         complete("Welcome!")

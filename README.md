@@ -51,4 +51,10 @@ The resource that has been secured for us is in the /secure context
     
     $ http -a foo:bar http://localhost:8080/secure
     
+# User Credentials CRUD Interface
+Spray and AngularJs, two modern frameworks for building responsive applications, and both not very difficult to learn. 
+I've created a small CRUD interface so users are now easy to configure.
+
+    http://localhost:8080/web/index.html
+        
 Have fun!
