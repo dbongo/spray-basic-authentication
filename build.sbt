@@ -10,8 +10,6 @@ scalaVersion := "2.11.1"
 
 resolvers += "spray" at "http://repo.spray.io/"
 
-javaOptions += "-Xms2G -Xmx2G"
-
 libraryDependencies ++= {
   val scalaV = "2.11.1"
   val akkaV = "2.3.4"
